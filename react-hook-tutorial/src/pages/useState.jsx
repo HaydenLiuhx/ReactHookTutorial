@@ -4,6 +4,7 @@ export default function MyUseState() {
     const [count, setCount] = useState(0)
     const [obj, setObj] = useState({name:"zhangsan"})
     const [arr, setArr] = useState([1,2,3])
+    // eslint-disable-next-line
     const [fun, setFun] = useState(()=>{
         return 1
     })

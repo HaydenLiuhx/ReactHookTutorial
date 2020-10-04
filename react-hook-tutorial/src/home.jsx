@@ -27,8 +27,8 @@ export default class Home extends Component {
             <Link to="/use-reducer">MyUseReducer</Link><span> | </span>
           </div>
           <Switch>
-            <Route path="/use-effect" component={MyUseState}></Route>
-            <Route path="/use-state" component={MyUseEffect}></Route>
+            <Route path="/use-effect" component={MyUseEffect}></Route>
+            <Route path="/use-state" component={MyUseState}></Route>
             <Route path="/use-ref" component={MyUseRef}></Route>
             <Route path="/use-context" component={MyUseContext}></Route>
             <Route path="/use-memo" component={MyUseMemo}></Route>
