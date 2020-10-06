@@ -9,7 +9,7 @@ import MyUseCallback from './pages/useCallback'
 import MyUseImperitiveHandle from './pages/useImperativeHandle'
 import MyUseLayout from './pages/useLayout'
 import MyUseReducer from './pages/useReducer'
-
+import Reducer2 from './pages/useReducer2'
 export default class Home extends Component {
   render() {
     return (
@@ -25,6 +25,7 @@ export default class Home extends Component {
             <Link to="/use-imperitivehandle">MyUseImperitiveHandle</Link><span> | </span>
             <Link to="/use-layout">MyUseLayout</Link><span> | </span>
             <Link to="/use-reducer">MyUseReducer</Link><span> | </span>
+            <Link to="/reducer2">Reducer2</Link><span> | </span>
           </div>
           <Switch>
             <Route path="/use-effect" component={MyUseEffect}></Route>
@@ -36,6 +37,7 @@ export default class Home extends Component {
             <Route path="/use-imperitivehandle" component={MyUseImperitiveHandle}></Route>
             <Route path="/use-layout" component={MyUseLayout}></Route>
             <Route path="/use-reducer" component={MyUseReducer}></Route>
+            <Route path="/reducer2" component={Reducer2}></Route>
             <Redirect to="/use-state"></Redirect>
           </Switch>
         </BrowserRouter>
